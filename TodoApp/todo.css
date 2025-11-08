@@ -1,0 +1,129 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #a8edea, #fed6e3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    width: 500px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    position: relative;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.input-box {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 15px;
+    padding-right: 30px; 
+}
+
+#taskInput {
+    flex: 1.5;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+#taskDate {
+    flex: 1;
+    padding: 10px;
+    font-size: 15px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+
+#addBtn {
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    padding: 11px 38px; 
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+#addBtn:hover {
+    background-color: #0b7dda;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin: 6px 0;
+    padding: 8px 10px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+}
+
+.task-text {
+    flex: 1;
+}
+
+.btns button {
+    margin-left: 5px;
+    border: none;
+    padding: 7px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+.edit-btn {
+    background-color: #ffb300;
+}
+
+.edit-btn:hover {
+    background-color: #e0a106;
+}
+
+.delete-btn {
+    background-color: #f44336;
+}
+
+.delete-btn:hover {
+    background-color: #c62828;
+}
+
+.deleteAll {
+    background-color: red;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    display: none;
+}
+
+.deleteAll:hover {
+    background-color: darkred;
+}
