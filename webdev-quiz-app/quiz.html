@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Dev Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="main-box">
+        <div class="quiz-box">
+            <h2 class="title">Web Development Quiz</h2>
+            <div id="timer">Time left: <span id="time">15</span>s</div>
+            <div id="questionBox" class="question"></div>
+            <div class="options">
+                <button class="btn" id="opt1" onclick="choose(this)"></button>
+                <button class="btn" id="opt2" onclick="choose(this)"></button>
+                <button class="btn" id="opt3" onclick="choose(this)"></button>
+                <button class="btn" id="opt4" onclick="choose(this)"></button>
+            </div>
+            <div class="bottom">
+                <button id="nextBtn" onclick="next()">Next</button>
+                <div id="score"></div>
+            </div>
+        </div>
+    </div>
+<script src="quiz.js"></script>
+</body>
+</html>
