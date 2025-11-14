@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>random password generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="box">
+        <h2>Random Password Penerator</h2>
+
+        <div class="output">
+            <input type="text" id="password" placeholder="your password will appear here">
+        </div>
+
+        <div class="controls">
+            <label>password length</label>
+            <input type="number" id="length" value="12" min="4" max="40">
+
+            <div class="checks">
+                <label><input type="checkbox" id="lowercase" checked> lowercase</label>
+                <label><input type="checkbox" id="uppercase" checked> uppercase</label>
+                <label><input type="checkbox" id="numbers" checked> numbers</label>
+                <label><input type="checkbox" id="symbols" checked> symbols</label>
+            </div>
+
+            <button id="generate">generate</button>
+            <button id="copy">copy</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
