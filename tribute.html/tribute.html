@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+        .outerdiv{
+            height: 1000px;
+            width: 80%;
+            background-color: antiquewhite;
+            margin: auto;
+        }
+        .imgandname{
+            display: flex;
+        }
+        .imgclass{
+            height: 300px;
+            width: 300px;
+            border-radius: 50px;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+        .nameclass{
+            margin-top: 280px;
+            margin-left: 20px;
+        }
+        .para{
+            font-size: 20px;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        .awardsection{
+            text-align: center;
+            height: 100px;
+            margin-top: 30px;
+        }
+        .lii{
+            list-style-type: none;
+            font-size: 20px;
+            padding-top: 5px;
+            color: black;
+            font-weight: bolder;
+        }
+        h2{
+            font-size: 36px;
+        }
+    </style>
+</head>
+<body>
+    <!--tribute page without a single html-->
+    <script>
+        let div1=document.createElement('div');
+        document.querySelector('body').append(div1);
+        div1.className='outerdiv';
+
+        let imgname=document.createElement('div');
+        imgname.className='imgandname';
+
+
+        let image=document.createElement('img');
+        image.src='/javascript/javascriptPart2/DOM2/apj.webp';
+        image.className='imgclass';
+
+        let namee=document.createElement('h1');
+        namee.className='nameclass';
+        namee.innerText='APJ Abdul Kalam';
+
+        let info=document.createElement('div');
+        info.className='infosection';
+
+        let p=document.createElement('p');
+        p.className='para'
+        p.innerText='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro nostrum saepe totam veniam ullam consequatur at suscipit iusto exercitationem dolorum pariatur atque, minus quia dicta voluptas sed molestiae at, autem inventore facilis perferendis asperiores odio consectetur totam sint? Velit labore magnam iure provident assumenda quas molestiae id magni iusto neque?lorem100Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum molestiae fugiat ea quasi eum deleniti nostrum corrupti! Voluptatibus dicta rerum asperiores ea mollitia eaque enim cumque quam necessitatibus vero magni praesentium modi fugiat id, deleniti illum ipsa, tempora minus et. Doloribus corporis qui at iste architecto corrupti voluptatem ullam sequi, nobis quasi. Explicabo, perferendis incidunt cum id voluptatem ab corporis maiores labore repudiandae omnis ut quis earum iste officiis sed dicta libero harum corrupti, est ratione architecto. Aliquam unde in natus et iusto, architecto eius iste repellat eaque asperiores voluptatum corporis at, eum praesentium sed nostrum, quia voluptate. Nobis sit non praesentium nostrum numquam facilis, magnam voluptas asperiores ea soluta vero a ipsum, dicta dignissimos inventore eligendi perspiciatis odio accusantium minus quam doloribus ipsa ratione et velit? Facere quos distinctio, alias laborum impedit ex, tempore eos doloremque dignissimos quas non nam nostrum sunt, dolorum aliquam eligendi fugiat necessitatibus? Atque omnis officia asperiores quisquam, earum cupiditate perspiciatis quis quae dolorum incidunt nesciunt, sequi similique repudiandae, recusandae ipsam quasi saepe. Tempora distinctio consequuntur voluptatem ipsum dignissimos tenetur, nisi voluptas eius facere ullam magnam sequi, quasi dolore temporibus ad magni veritatis? Quis ad fuga sit quas at, aperiam consectetur praesentium pariatur labore perspiciatis?'
+
+
+        let award=document.createElement('div');
+        award.className='awardsection';
+        let awardlist=document.createElement('ul');
+        awardlist.className='awardlist';
+
+        let h2=document.createElement('h2');
+        h2.innerText='Awards of APJ sir';
+
+        let a1=document.createElement('li');
+        a1.innerText='bharat ratna (1997)';
+        a1.className='lii'
+        
+        let a2=document.createElement('li');
+        a2.innerText='padma vibhushan (1990)';
+        a2.className='lii';
+
+        let a3=document.createElement('a3');
+        a3.innerText='padma bhushan (1981)';
+        a3.className='lii';
+        
+
+
+        document.querySelector('.outerdiv').append(imgname);
+        document.querySelector('.imgandname').append(image);
+        document.querySelector('.imgandname').append(namee);
+        document.querySelector('.outerdiv').append(info);
+        document.querySelector('.infosection').append(p);
+        document.querySelector('.infosection').append(award);
+        document.querySelector('.awardsection').append(h2);
+        document.querySelector('.awardsection').append(a1);
+        document.querySelector('.awardsection').append(a2);
+        document.querySelector('.awardsection').append(a3);
+        
+
+    </script>
+</body>
+</html>
